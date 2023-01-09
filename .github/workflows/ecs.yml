@@ -31,7 +31,7 @@ on:
     branches: [ "master" ]
 
 env:
-  AWS_REGION: ${{ env.AWS_REGION }}                  # set this to your preferred AWS region, e.g. us-west-1
+  AWS_REGION: ${{ Region.AWS_REGION }}                  # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: ${{ env.ECR_REPOSITORY }}
   ECS_SERVICE: ${{ env.ECS_SERVICE }}                 # set this to your Amazon ECS service name
   ECS_CLUSTER: ${{ env.ECS_CLUSTER }}                 # set this to your Amazon ECS cluster name
